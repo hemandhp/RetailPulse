@@ -31,4 +31,4 @@ Thumbs.db
 .vscode/
 .idea/
 .agents/
-.claude/
+.claude/dashboard/app_backup.py
