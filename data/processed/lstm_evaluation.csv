@@ -1,0 +1,2 @@
+Model,MAPE,Valid_Test_Days,Excluded_Zero_Revenue_Days
+LSTM,44.76960268258496,60,9

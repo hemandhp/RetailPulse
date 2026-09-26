@@ -1,0 +1,5 @@
+Model,ROC_AUC,Precision,Recall,Precision_at_Top_20
+Logistic Regression - Leakage Free,0.793,0.6171,0.5724,0.6185
+Random Forest - Leakage Free,0.7493,0.5814,0.431,
+Improved Logistic Regression,0.8087,0.6224,0.631,0.6416
+Gradient Boosting,0.8175128266316669,0.6254826254826255,0.5586206896551724,0.6416184971098265

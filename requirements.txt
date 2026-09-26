@@ -1,0 +1,11 @@
+streamlit==1.64.0
+pandas==2.3.3
+numpy
+scikit-learn==1.7.2
+matplotlib
+seaborn==0.13.2
+openpyxl==3.1.5
+joblib
+prophet
+tensorflow==2.21.0
+jupyter
