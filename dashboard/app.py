@@ -21,7 +21,6 @@ def login_page():
     st.markdown(
         """
         <style>
-
         .login-container {
             max-width: 430px;
             margin: 100px auto 0 auto;
@@ -56,13 +55,6 @@ def login_page():
             font-size: 13px;
             margin-bottom: 30px;
         }
-
-        .login-demo {
-            color: #85829A;
-            font-size: 11px;
-            margin-top: 18px;
-        }
-
         </style>
         """,
         unsafe_allow_html=True
@@ -70,7 +62,13 @@ def login_page():
 
     st.markdown(
         """
-        
+        <div class="login-container">
+            <div class="login-logo">📊</div>
+            <div class="login-title">RetailPulse</div>
+            <div class="login-subtitle">
+                AI-Powered Customer Analytics
+            </div>
+        </div>
         """,
         unsafe_allow_html=True
     )
@@ -93,28 +91,19 @@ def login_page():
 
     if login_clicked:
 
-        if (
-            email == "admin@retailpulse.com"
-            and password == "RetailPulse@123"
-        ):
+        correct_email = st.secrets["login"]["email"]
+        correct_password = st.secrets["login"]["password"]
 
+        if email == correct_email and password == correct_password:
             st.session_state["logged_in"] = True
             st.session_state["user_email"] = email
-
             st.rerun()
 
         else:
-
-            st.error(
-                "Invalid email or password."
-            )
+            st.error("Invalid email or password.")
 
     st.caption(
-        "Demo login: admin@retailpulse.com"
-    )
-
-    st.caption(
-        "Password: RetailPulse@123"
+        "Use your authorized RetailPulse account to continue."
     )
 
 

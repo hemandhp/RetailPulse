@@ -34,3 +34,4 @@ Thumbs.db
 .claude/dashboard/app_backup.py
 .claude/
 dashboard/app_backup.py
+.streamlit/secrets.toml
