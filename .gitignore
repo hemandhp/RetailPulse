@@ -32,3 +32,5 @@ Thumbs.db
 .idea/
 .agents/
 .claude/dashboard/app_backup.py
+.claude/
+dashboard/app_backup.py
