@@ -8,4 +8,3 @@ openpyxl==3.1.5
 joblib
 prophet
 tensorflow==2.21.0
-jupyter
